@@ -111,7 +111,7 @@ void write_to_file(){
 		printf("\nError opening File");
 	}
 	else{
-		fprintf(file2,"%s %s\n",short_form,long_form);
+		fprintf(file2,"%s %s",short_form,long_form);
 	}
 	fclose(file2);
 
