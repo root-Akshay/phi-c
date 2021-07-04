@@ -102,7 +102,7 @@ void write_to_file(){
 
 	printf("Enter the short-form: ");
 	scanf("%s",&short_form);
-	printf("\nEnter the short-form: ");
+	printf("\nEnter the long-form: ");
 	scanf("%s",&long_form);
 
 	file2 = fopen("shorts.txt", "a");
@@ -111,7 +111,7 @@ void write_to_file(){
 		printf("\nError opening File");
 	}
 	else{
-		fprintf(file2,"\n%s %s\n",short_form,long_form);
+		fprintf(file2,"%s %s\n",short_form,long_form);
 	}
 	fclose(file2);
 
